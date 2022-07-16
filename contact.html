@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Contact me" content="Contact me page">
+    <meta name="viewport" content="width=width=device-width , initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/698b6da628.js" crossorigin="anonymous"></script>
+    <title>Contact us</title>
+</head>
+<body>
+    <header>
+        <div class="navigationbar">
+            <nav class="nav">
+                    <input type="checkbox" id="hamburgermeny">
+                    <div class="fasfabars"><label for="hamburgermeny"><i class="fas fa-bars"></i></label></div>
+                    <ul class="nav-links">
+                        <li><a href="index.html"> <img src="images/logo.png" id="logo"></a></li>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="heading">Contact Us!</h1>
+        <div class="container">
+            <form action="action_page.php" class="checkform">
+          
+                <label for="firstname" id="formlabel">Enter Name</label>
+                <input type="text" class="NameField" name="firstname" id="forminput" placeholder="Your name..">
+                <div class="fnmsg" style="color: red;"></div>
+        
+                <label for="email"  id="formlabel">Email Address</label>
+                <input class="EmailField" type="text" name="email" id="forminput" placeholder="Your Email">
+                <div class="emsg" style="color: red;"></div>
+
+              <label for="subject" id="formlabel">Subject</label>
+              <input type="text" class="SubjectField" id="forminput" name="subject" placeholder="Enter subject">
+              <div class="sumsg" style="color: red;"></div>
+          
+              <label for="message" id="formlabel">Message</label>
+              <textarea class="messagefield" name="subject" id="forminput" placeholder="Your message" style="height:200px"></textarea>
+              <div class="msg" style="color: red;"></div>
+              
+              <div class="validated" style="color: lime;"></div>
+              <input id="formbtn" type="submit" value="Submit">
+            </form>
+
+            
+          </div>
+     </main>
+     <footer>
+        
+        <ul class="footer-nav">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="contact.html"class="active">Contact</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+
+    </footer>
+</body>
+<script src="js/validation.js" defer></script>
+</html>

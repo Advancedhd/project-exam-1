@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Homepage" content="The homepage on the site">
+    <meta name="viewport" content="width=width=device-width , initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/698b6da628.js" crossorigin="anonymous"></script>
+    <title>Reccipes</title>
+</head>
+<body>
+    <header>
+        <div class="navigationbar">
+            <nav class="nav">
+                    <input type="checkbox" id="hamburgermeny">
+                    <div class="fasfabars"><label for="hamburgermeny"><i class="fas fa-bars"></i></label></div>
+                    <ul class="nav-links">
+                        <li><a href="index.html"> <img src="images/logo.png" id="logo"></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html" class="active">Recipes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a><input class="search" type="text" placeholder="Search.."></a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>All Recipes</h1>
+        <div class="recipes">
+        
+        </div>
+        <div class="error"></div>
+    </main>
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+    </footer>
+    <script src="js/getAllRecipes.js" type="module"></script>
+</body>
+</html>

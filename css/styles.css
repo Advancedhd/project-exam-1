@@ -1,0 +1,344 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: black;
+  max-width: 100%;
+}
+
+.newslettertitle{
+  border-bottom: none;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.details-image {
+  margin-bottom: 1em;
+  height: 600px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 600px;
+  margin-right: 50px;
+  margin-left: 50px;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.detailContainer{
+  max-width: 100%;
+  justify-content: center;
+  margin: 0 auto ;
+}
+
+.recipeContainer{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.recipeContainer h2{
+  color: white;
+  border-bottom: none;
+  margin-right: 40px;
+}
+
+.ingredients, .htmingredients{
+  font-size: 20px;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.ingredients{
+  width: 250px;
+}
+
+.recipebtn{
+  margin-top: 15px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero-img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+.msg, .fnmsg, .smsg, .emsg{
+  margin-bottom: 10px;
+  margin-top: -12px;
+}
+
+.trcontainer {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipe {
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 250px;
+  border: 3px solid grey;
+  border-radius: 1rem;
+}
+
+.recipe h4{
+  color: white;
+  font-weight: 100;
+  margin-top: 15px;
+}
+
+.recipes img{
+  border-radius: 1rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+#forminput, #formlabel {
+  width: 100%; 
+  padding: 12px; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+}
+
+#formbtn {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 20px;
+  
+}
+
+main {
+  text-align: center;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.container label{
+  color: white;
+}
+
+
+.nav-links,
+#hamburgermeny {
+  display: none;
+}
+#hamburgermeny:checked ~ .nav-links {
+  display: block;
+  z-index: 6;
+  text-align: center;
+}
+
+#hamburgermeny:checked ~ .nav-links li{
+  margin-left: 0;
+}
+
+#logo{
+  height: 100px;
+  margin-top: -29px;
+}
+
+.fasfabars {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  text-align: center;
+}
+
+h1, h2, h3{
+  color: white;
+}
+
+
+.hero-banner{
+  background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-banner img{
+  width: 100%;
+  height: 600px;
+}
+
+
+.nav-links li {
+  list-style-type: none;
+  text-decoration: none;
+  z-index: 6;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 100px;
+  background-color: black;
+}
+
+.nav-links li a {
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 10px;
+  color: white;
+  margin-top: 30px;
+}
+
+.newsletterinput{
+  padding: 6px;
+  border: 2px solid #04AA6D;
+  border-radius: 15px;
+  font-size: 17px;
+}
+
+.search {
+  padding: 6px;
+  border: 2px solid #04AA6D;
+  border-radius: 15px;
+  font-size: 17px;
+}
+
+
+.active {
+  color: #04AA6D !important;
+  border-bottom: 5px solid #04AA6D;
+}
+
+footer {
+  background-color: black;
+  height: 250px;
+  margin-top: 10%;
+}
+
+.footer-nav {
+  font-size: 115%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-nav li {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 4%;
+  width: 100%;
+  background-color: black;
+}
+
+.footer-nav li a {
+  color: white;
+}
+
+main {
+  overflow: hidden;
+  font-family: lato, sans-serif;
+}
+
+main h1 {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 5px solid #04AA6D;
+}
+main h2 {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  border-bottom: 5px solid #04AA6D;
+  color: white;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 1200px) { 
+
+
+.details-image{
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.recipeContainer{
+  display: block;
+  justify-content: center;
+}
+
+.ingredients, .htmingredients, .detailbold{
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.ingredients, .htmingredients{
+  font-size: 17px;
+}
+ 
+.hero-banner img{
+  height: 300px;
+}
+
+.container{
+  width: 100%;
+}
+
+.nav-links li a{
+  margin-left: -20px;
+}
+
+}
+
+
+
+/*desktop*/
+/*resolution 1100-1900px*/
+
+@media only screen and (min-width: 1100px) and (max-width: 2600px) {
+
+  /*navigation*/
+
+  .fasfabars {
+    display: none;
+  }
+
+  .nav-links {
+    width: 100%;
+    font-size: 150%;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    margin-bottom: 7%;
+  }
+}
