@@ -44,7 +44,6 @@ const validateForm = () => {
   validationFlag = true;
   event.preventDefault();
 
-  // checks for name
   if (namefield.value === "") {
     fnmsg += "Name is required! <br>";
     validationFlag = false;
@@ -53,7 +52,6 @@ const validateForm = () => {
     validationFlag = false;
   }
 
-  // checks for email
   if (!email.value) {
     emsg += "Email is required! <br>";
     validationFlag = false;
@@ -62,29 +60,24 @@ const validateForm = () => {
     validationFlag = false;
   }
 
-  //checks for subject field
   if (!checklength(subject.value, 10)) {
     smsg += "Subject must be minimum 10 in length! <br>";
     validationFlag = false;
   }
 
-  //checks for message field
   if (!checklength(messagefield.value, 25)) {
     msg += "Message must be minimum 25 in length! <br>";
     validationFlag = false;
   }
 
-  //display whatever errors occured
   fnmsgbox.innerHTML = fnmsg;
   emsgbox.innerHTML = emsg;
   smsgbox.innerHTML = smsg;
   msgbox.innerHTML = msg;
 
-  //final check if the validation went through successfully
   if (validationFlag === true) {
     validated.innerHTML = "Success, form has been sent";
   }
 };
 
-//add eventlistener to the button
 form.addEventListener("submit", validateForm);
