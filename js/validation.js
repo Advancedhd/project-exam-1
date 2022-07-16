@@ -80,18 +80,6 @@ const validateForm = () => {
   smsgbox.innerHTML = smsg;
   msgbox.innerHTML = msg;
 
-  //clear errors after 10 seconds
-  setTimeout(() => {
-    fnmsgbox.innerHTML = "";
-    emsgbox.innerHTML = "";
-    smsgbox.innerHTML = "";
-    msgbox.innerHTML = "";
-    fnmsg = "";
-    emsg = "";
-    smsg = "";
-    msg = "";
-  }, 10000);
-
   //final check if the validation went through successfully
   if (validationFlag === true) {
     validated.innerHTML = "Success, form has been sent";
