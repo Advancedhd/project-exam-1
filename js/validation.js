@@ -47,7 +47,7 @@ const validateForm = () => {
   if (namefield.value === "") {
     fnmsg += "Name is required! <br>";
     validationFlag = false;
-  } else if (namefield.value.length <= 4) {
+  } else if (namefield.value.length <= 2) {
     fnmsg += "Name is too short! <br>";
     validationFlag = false;
   }
